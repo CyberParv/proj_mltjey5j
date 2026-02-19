@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Lato:wght@300;400;500;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 52 94% 94%;
+  --foreground: 24 10% 10%;
+  --primary: 353 42% 32%;
+  --primary-foreground: 52 94% 94%;
+  --secondary: 74 32% 32%;
+  --secondary-foreground: 52 94% 94%;
+  --accent: 32 65% 62%;
+  --accent-foreground: 24 10% 10%;
+  --muted: 48 56% 91%;
+  --muted-foreground: 33 5% 32%;
+  --card: 0 0% 100%;
+  --card-foreground: 24 10% 10%;
+  --border: 46 39% 85%;
+  --ring: 32 65% 62%;
+  --destructive: 0 74% 42%;
+  --radius: 0.75rem;
+  --font-heading: "Cormorant Garamond", serif;
+  --font-body: "Lato", sans-serif;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: var(--font-body);
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+  }
+}
